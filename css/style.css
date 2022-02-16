@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+body {
+    background-color: rgb(250, 250, 219);
+}
+
+.heading {
+    text-align: center;
+    color: darkblue;
+    font-family: 'Festive', cursive;
+    animation: header;
+    animation-duration: 3s;
+    position: relative; /*top-right-bottom-left*/
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 15px}
+}
+
+.img {
+height: 400px;
+width: 700px;
+margin: 0 auto;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: img;
+    animation-duration: 5s;
+}
+
+@keyframes img {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.heading-ingreadients {
+    color: darkblue;
+    text-align: center;
+    font-family: 'Festive', cursive;
+    animation: heading-ingredients;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes heading-ingredients {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+.ingredients {
+    border: 1px solid;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: darkblue;
+    animation: ingredients;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ingredients {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.ingredients-table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.heading-instructions {
+    font-family: 'Festive', cursive;
+    text-align: center;
+    color: darkblue;
+    animation: heading-instructions;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes heading-instructions {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+.instructions {
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: darkblue;
+    animation: instructions;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes instructions {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.instructions ol {
+    border: 1px solid black;
+margin: 0 auto;
+width: 75%;
+}
+
+.paragraph {
+    color: darkblue;
+    text-align: center;
+}
+
+.footer {
+    color: darkblue;
+    text-align: center;
+}
